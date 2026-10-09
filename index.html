@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartCampus AI — Your Intelligent Campus Companion</title>
+    <meta name="description" content="An all-in-one AI-powered academic companion featuring an AI study assistant, smart attendance calculator, automated study planner, lecture notes summarizer, timetable manager, and campus deadlines dashboard." />
+    <meta property="og:title" content="SmartCampus AI — Your Intelligent Campus Companion" />
+    <meta property="og:description" content="An all-in-one AI-powered academic companion featuring an AI study assistant, smart attendance calculator, automated study planner, lecture notes summarizer, timetable manager, and campus deadlines dashboard." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function() {
+        try {
+          var storedTheme = localStorage.getItem('smartcampus_theme_v1');
+          if (!storedTheme) {
+            var profileStr = localStorage.getItem('smartcampus_profile_v1');
+            if (profileStr) {
+              var parsed = JSON.parse(profileStr);
+              storedTheme = parsed.theme;
+            }
+          }
+          if (storedTheme === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+  --bg-primary: #f8fafc;
+  --text-primary: #0f172a;
+}
+
+.dark {
+  color-scheme: dark;
+  --bg-primary: #020617;
+  --text-primary: #f8fafc;
+}
+
+html {
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+}

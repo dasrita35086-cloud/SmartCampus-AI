@@ -1,0 +1,6 @@
+{
+  "name": "SmartCampus AI — Your Intelligent Campus Companion",
+  "description": "An all-in-one AI-powered academic companion featuring an AI study assistant, smart attendance calculator, automated study planner, lecture notes summarizer, timetable manager, and campus deadlines dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
